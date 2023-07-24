@@ -1,6 +1,8 @@
 return {
   {
     "loctvl842/monokai-pro.nvim",
+    lazy = false,
+    priority = 1000,
     opts = {
       transparent_background = true,
       terminal_colors = true,
@@ -11,8 +13,13 @@ return {
         "which-key",
         "nvim-cmp",
         "cmp",
+        "blame",
       },
     },
+    config = function(_, opts)
+      require("monokai-pro").setup(opts)
+      vim.cmd([[colorscheme monokai-pro]])
+    end,
   }
 }
 
