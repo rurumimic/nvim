@@ -4,6 +4,9 @@ local M = {}
 local highlights = require "custom.highlights"
 
 M.ui = {
+  theme = "monochrome",
+  theme_toggle = { "monekai", "monochrome"  },
+
   hl_override = highlights.override,
   hl_add = highlights.add,
 }
