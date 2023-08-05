@@ -31,12 +31,15 @@ return {
     end,
   },
   {
-    'stevearc/oil.nvim',
+    "stevearc/oil.nvim",
     lazy = false,
     opts = {},
     -- Optional dependencies
     dependencies = { "nvim-tree/nvim-web-devicons" },
   },
-
+  -- {
+    -- "kien/ctrlp.vim",
+    -- lazy = false,
+  -- },
 }
 
