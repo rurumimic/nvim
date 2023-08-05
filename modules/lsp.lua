@@ -91,5 +91,9 @@ return {
         },
       }
     end,
-  }
+  },
+  {
+    "preservim/tagbar",
+    lazy = false,
+  },
 }
