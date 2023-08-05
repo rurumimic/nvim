@@ -93,6 +93,10 @@ return {
     end,
   },
   {
+    "mbbill/undotree",
+    lazy = false,
+  },
+  {
     "preservim/tagbar",
     lazy = false,
   },
