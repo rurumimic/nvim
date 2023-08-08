@@ -100,4 +100,13 @@ return {
     "preservim/tagbar",
     lazy = false,
   },
+  {
+    "vim-scripts/gtags.vim",
+    keys = {
+      { "<leader>fg", ":Gtags<space>", desc = "Gtags Find" },
+      { "<leader>fc", "<cmd>:GtagsCursor<cr>", desc = "Gtags Cursor" },
+      { "<leader>fn", "<cmd>:cn<cr>", desc = "Gtag Next" },
+      { "<leader>fp", "<cmd>:cp<cr>", desc = "Gtag Prev" },
+    },
+  },
 }
