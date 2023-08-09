@@ -9,7 +9,7 @@ local servers = {
   "clangd",
   "gopls",
   "rust_analyzer",
-  "zls",
+  -- "zls",
   "pyright",
 }
 

@@ -23,13 +23,13 @@ return {
         "lua-language-server",
         "stylua",
 
-        "clangd",
+        -- "clangd",
         "clang-format",
 
         "gopls",
         "rust-analyzer",
-        "zls",
-        "pyright",
+        -- "zls",
+        "pyright","black","isort",
 
         "markdownlint", "mdformat",
 
@@ -53,7 +53,7 @@ return {
 
         "go",
         "rust",
-        "zig",
+        -- "zig",
 
         "python",
 
@@ -73,24 +73,6 @@ return {
         -- }
       },
     },
-  },
-  {
-    "mhartington/formatter.nvim",
-    config = function()
-      local util = require "formatter.util"
-      require("formatter").setup {
-        logging = true,
-        log_level = vim.log.levels.WARN,
-        filetype = {
-          lua = require("formatter.filetypes.lua").stylua,
-          c = require("formatter.defaults.clangformat"),
-          cpp = require("formatter.defaults.clangformat"),
-          ["*"] = {
-            require("formatter.filetypes.any").remove_trailing_whitespace,
-          },
-        },
-      }
-    end,
   },
   {
     "mbbill/undotree",
