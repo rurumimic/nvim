@@ -1,4 +1,5 @@
 local opt = vim.opt
+local fn = vim.fn
 local g = vim.g
 
 -- local autocmd = vim.api.nvim_create_autocmd
@@ -59,4 +60,19 @@ opt.winminwidth = 5 -- Minimum window width
 opt.wrap = false -- Disable line wrap
 opt.splitkeep = "cursor" -- cursor, screen, topline
 -- opt.shortmess:append({ C = true })
+
+-- clipboard
+local function copy(lines, _)
+  require('osc52').copy(table.concat(lines, '\n'))
+end
+
+local function paste()
+  return {fn.split(fn.getreg(''), '\n'), fn.getregtype('')}
+end
+
+g.clipboard = {
+  name = 'osc52',
+  copy = {['+'] = copy, ['*'] = copy},
+  paste = {['+'] = paste, ['*'] = paste},
+}
 
