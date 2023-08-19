@@ -7,7 +7,7 @@ local lspconfig = require "lspconfig"
 -- if you just want default config for the servers then put them in a table
 local servers = {
   "lua_ls",
-  "clangd",
+  -- "clangd",
   "gopls",
   "rust_analyzer",
   -- "zls",
@@ -20,6 +20,15 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
+
+lspconfig.clangd.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  cmd = {
+    "clangd",
+    "--offset-encoding=utf-16",
+  }
+}
 
 -- if not configs.postgres_lsp then
 --   configs.postgres_lsp = {
