@@ -10,7 +10,7 @@ local g = vim.g
 --   command = "tabdo wincmd =",
 -- })
 
-g.python3_host_prog = '~/.pyenv/versions/vim3/bin/python'
+g.python3_host_prog = '~/.pyenv/versions/vim/bin/python'
 
 opt.autowrite = true -- Enable auto write
 -- opt.clipboard = "unnamedplus"
