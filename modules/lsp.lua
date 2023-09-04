@@ -91,4 +91,19 @@ return {
       { "<leader>fp", "<cmd>:cp<cr>", desc = "Gtag Prev" },
     },
   },
+  {
+    "folke/trouble.nvim",
+    lazy = false,
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    keys = {
+      { "<leader>lx", function() require("trouble").open() end, desc = "Trouble Open" },
+      { "<leader>lw", function() require("trouble").open("workspace_diagnostics") end, desc = "Trouble Workspace" },
+      { "<leader>ld", function() require("trouble").open("document_diagnostics") end, desc = "Trouble Document" },
+      { "<leader>lq", function() require("trouble").open("quickfix") end, desc = "Trouble Quickfix" },
+      { "<leader>ll", function() require("trouble").open("loclist") end, desc = "Trouble loclist" },
+      { "<leader>ln", function() require("trouble").next({skip_groups=true, jump=true}) end, desc = "Trouble Next" },
+      { "<leader>lp", function() require("trouble").previous({skip_groups=true, jump=true}) end, desc = "Trouble Prev" },
+      { "gR", function() require("trouble").open("lsp_references") end, desc = "Trouble LSP References" },
+    },
+  }
 }
