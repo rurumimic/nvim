@@ -5,7 +5,6 @@ return {
       git = {
         enable = true,
       },
-
       renderer = {
         highlight_git = true,
         icons = {
@@ -36,6 +35,13 @@ return {
     opts = {},
     -- Optional dependencies
     dependencies = { "nvim-tree/nvim-web-devicons" },
+  },
+  {
+    "folke/zen-mode.nvim",
+    lazy = false,
+    keys = {
+      { "<leader>Z", ":ZenMode<CR>", desc = "ZenMode" },
+    }
   },
   -- {
     -- "kien/ctrlp.vim",

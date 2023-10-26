@@ -27,6 +27,7 @@ lspconfig.clangd.setup {
   cmd = {
     "clangd",
     "--offset-encoding=utf-16",
+    "--limit-references=0",
   }
 }
 

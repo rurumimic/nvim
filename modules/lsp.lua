@@ -30,6 +30,7 @@ return {
         "rust-analyzer",
         -- "zls",
         "pyright","black","isort",
+        "debugpy",
 
         "markdownlint", "mdformat",
 
@@ -73,6 +74,72 @@ return {
         -- }
       },
     },
+  },
+  {
+    "mfussenegger/nvim-dap",
+  },
+  {
+    "jay-babu/mason-nvim-dap.nvim",
+    config = function()
+      require("mason").setup()
+      require("mason-nvim-dap").setup({
+        ensure_installed = {
+          "python",
+        },
+        automatic_installation = true,
+        handlers = {
+          function(config)
+            require('mason-nvim-dap').default_setup(config)
+          end,
+        },
+      })
+    end,
+  },
+  {
+    "mfussenegger/nvim-dap-python",
+    dependencies = {
+      "mfussenegger/nvim-dap",
+      "jay-babu/mason-nvim-dap.nvim",
+    },
+    ft = { "python" },
+    config = function(plugin, opts)
+      local runtime = vim.fn.stdpath('data') .. '/mason/packages/debugpy/venv/bin/python'
+      require('dap-python').setup(runtime)
+    end,
+    opts = function(_, opts)
+      -- table.insert(require("dap").configurations.python, {
+      -- })
+    end,
+  },
+  {
+    "rcarriga/nvim-dap-ui",
+    dependencies = {
+      "mfussenegger/nvim-dap",
+      "theHamsta/nvim-dap-virtual-text",
+    },
+    config = function(_, opts)
+      local dap = require("dap")
+      local dapui = require("dapui")
+      dapui.setup(opts)
+      dap.listeners.after.event_initialized["dapui_config"] = function()
+        dapui.open({})
+      end
+      dap.listeners.before.event_terminated["dapui_config"] = function()
+        dapui.close({})
+      end
+      dap.listeners.before.event_exited["dapui_config"] = function()
+        dapui.close({})
+      end
+    end,
+  },
+  {
+    "theHamsta/nvim-dap-virtual-text",
+    dependencies = {
+      "mfussenegger/nvim-dap",
+    },
+    config = function()
+      require("nvim-dap-virtual-text").setup()
+    end,
   },
   {
     "mbbill/undotree",
