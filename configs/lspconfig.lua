@@ -7,11 +7,12 @@ local lspconfig = require "lspconfig"
 -- if you just want default config for the servers then put them in a table
 local servers = {
   "lua_ls",
-  -- "clangd",
   "gopls",
-  "rust_analyzer",
-  -- "zls",
   "pyright",
+
+  -- "clangd",
+  -- "rust_analyzer",
+  -- "zls",
 }
 
 for _, lsp in ipairs(servers) do
@@ -31,6 +32,29 @@ lspconfig.clangd.setup {
   }
 }
 
+lspconfig.rust_analyzer.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  settings = {
+      ["rust-analyzer"] = {
+          imports = {
+              granularity = {
+                  group = "module",
+              },
+              prefix = "self",
+          },
+          cargo = {
+              buildScripts = {
+                  enable = true,
+              },
+          },
+          procMacro = {
+              enable = true
+          },
+      }
+  }
+}
+
 -- if not configs.postgres_lsp then
 --   configs.postgres_lsp = {
 --     default_config = {
@@ -44,4 +68,4 @@ lspconfig.clangd.setup {
 -- end
 --
 -- lspconfig.postgres_lsp.setup{}
---
+
