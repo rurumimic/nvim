@@ -34,11 +34,13 @@ return {
 
         "markdownlint", "mdformat",
 
-        -- "css-lsp",
-        -- "html-lsp",
+        "css-lsp",
+        "html-lsp",
         -- "typescript-language-server",
-        -- "deno",
-        -- "prettier"
+        "deno",
+        "prettier",
+
+        "shfmt"
       }
     },
   },
@@ -61,11 +63,13 @@ return {
         "markdown",
         "markdown_inline",
 
-        -- "html",
-        -- "css",
-        -- "javascript",
-        -- "typescript",
-        -- "tsx",
+        "html",
+        "css",
+        "javascript",
+        "typescript",
+        "tsx",
+
+        "bash",
       },
       indent = {
         enable = true,
