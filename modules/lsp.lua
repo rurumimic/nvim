@@ -56,6 +56,7 @@ return {
 
         "c",
         "cpp",
+        "cuda",
 
         "rust",
 
