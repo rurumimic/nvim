@@ -1,5 +1,14 @@
 local M = {}
 
+local ReadLaunchJson = function()
+  if vim.fn.filereadable(".vscode/launch.json") then
+    require("dap.ext.vscode").load_launchjs(nil, {
+      lldb = {"c", "cpp", "rust"},
+      debugpy = {"python"},
+    })
+  end
+end
+
 local ToggleQuickFix = function()
   local qf_exists = false
   for _, win in pairs(vim.fn.getwininfo()) do

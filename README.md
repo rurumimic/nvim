@@ -14,7 +14,7 @@
 
 ```bash
 rm -rf ~/.config/nvim/lua/custom
-git clone https://github.com/rurumimic/nvim ~/.config/nvim/lua/custom --depth 1 
+git clone https://github.com/rurumimic/nvim ~/.config/nvim/lua/custom --depth 1
 git fetch && git pull
 ```
 
@@ -25,24 +25,24 @@ git fetch && git pull
 ├── lazy-lock.json
 └── lua/
     ├── core/
-    │   ├── bootstrap.lua
-    │   ├── default_config.lua
-    │   ├── init.lua
-    │   ├── mappings.lua
-    │   └── utils.lua
+    │   ├── bootstrap.lua
+    │   ├── default_config.lua
+    │   ├── init.lua
+    │   ├── mappings.lua
+    │   └── utils.lua
     ├── custom/                  # rurumimic/nvim
-    │   ├── README.md
-    │   └── chadrc.lua
+    │   ├── README.md
+    │   └── chadrc.lua
     └── plugins/
         ├── configs/
-        │   ├── cmp.lua
-        │   ├── lazy_nvim.lua
-        │   ├── lspconfig.lua
-        │   ├── mason.lua
-        │   ├── nvimtree.lua
-        │   ├── others.lua
-        │   ├── telescope.lua
-        │   └── treesitter.lua
+        │   ├── cmp.lua
+        │   ├── lazy_nvim.lua
+        │   ├── lspconfig.lua
+        │   ├── mason.lua
+        │   ├── nvimtree.lua
+        │   ├── others.lua
+        │   ├── telescope.lua
+        │   └── treesitter.lua
         └── init.lua
 ```
 

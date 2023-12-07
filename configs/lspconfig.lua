@@ -27,8 +27,15 @@ lspconfig.clangd.setup {
   capabilities = capabilities,
   cmd = {
     "clangd",
+    "-j=12", -- nproc
+    "--clang-tidy",
+    "--background-index",
     "--offset-encoding=utf-16",
     "--limit-references=0",
+    "--header-insertion=iwyu",
+    "--completion-style=detailed",
+    "--function-arg-placeholders",
+    "--fallback-style=google",
   }
 }
 
