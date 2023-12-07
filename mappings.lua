@@ -47,6 +47,8 @@ M.general = {
 
     ["<F3>"] = { function() require('dapui').toggle({}) end, "DAP UI" },
     ["<leader>de"] = { function() require('dapui').eval() end, "DAP Eval" },
+
+    ["<leader>cp"] = { ":Copilot panel<enter>", "Copilot panel" },
   },
   v = {
     ["<leader>de"] = { function() require('dapui').eval() end, "DAP Eval" },
