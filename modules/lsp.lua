@@ -23,6 +23,8 @@ return {
         "lua-language-server",
         "stylua",
 
+        "asm-lsp", "asmfmt",
+
         -- "clangd",
         "clang-format",
 

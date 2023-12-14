@@ -9,7 +9,7 @@ local servers = {
   "lua_ls",
   "gopls",
   "pyright",
-
+  "asm_lsp",
   -- "clangd",
   -- "rust_analyzer",
   -- "zls",
