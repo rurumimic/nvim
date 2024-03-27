@@ -45,7 +45,9 @@ return {
         "deno",
         "prettier",
 
-        "shfmt"
+        "shfmt",
+
+        "solidity", "solidity-ls"
       }
     },
   },
@@ -77,6 +79,8 @@ return {
         "tsx",
 
         "bash",
+
+        "solidity"
       },
       indent = {
         enable = true,

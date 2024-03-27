@@ -13,6 +13,7 @@ local servers = {
   -- "clangd",
   -- "rust_analyzer",
   -- "zls",
+  "solidity"
 }
 
 for _, lsp in ipairs(servers) do
