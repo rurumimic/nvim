@@ -13,7 +13,7 @@ local servers = {
   -- "clangd",
   -- "rust_analyzer",
   -- "zls",
-  "solidity"
+  -- "solidity"
 }
 
 for _, lsp in ipairs(servers) do
@@ -77,3 +77,14 @@ lspconfig.rust_analyzer.setup {
 --
 -- lspconfig.postgres_lsp.setup{}
 
+lspconfig.solidity.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  cmd = {
+    "nomicfoundation-solidity-language-server",
+    "--stdio",
+  },
+  filetypes = { "solidity" },
+  root_dir = lspconfig.util.find_git_ancester,
+  single_file_support = true,
+}

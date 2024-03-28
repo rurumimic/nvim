@@ -47,7 +47,8 @@ return {
 
         "shfmt",
 
-        "solidity", "solidity-ls"
+        "solidity", "solidity-ls",
+        "nomicfoundation-solidity-language-server"
       }
     },
   },
