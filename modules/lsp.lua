@@ -48,7 +48,9 @@ return {
         "shfmt",
 
         "solidity", "solidity-ls",
-        "nomicfoundation-solidity-language-server"
+        "nomicfoundation-solidity-language-server",
+
+        "haskell-language-server"
       }
     },
   },
@@ -81,7 +83,9 @@ return {
 
         "bash",
 
-        "solidity"
+        "solidity",
+
+        "haskell"
       },
       indent = {
         enable = true,
