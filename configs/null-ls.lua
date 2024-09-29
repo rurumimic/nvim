@@ -16,6 +16,7 @@ local sources = {
   b.formatting.isort,
   b.formatting.mdformat,
   b.formatting.shfmt,
+  b.formatting.ocamlformat,
 }
 
 null_ls.setup {

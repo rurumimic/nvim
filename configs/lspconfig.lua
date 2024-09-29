@@ -10,6 +10,7 @@ local servers = {
   "gopls",
   "pyright",
   "asm_lsp",
+  "ocamllsp"
   -- "clangd",
   -- "rust_analyzer",
   -- "zls",
