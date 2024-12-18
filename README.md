@@ -1,48 +1,47 @@
 # Neovim
 
-- [NvChad](https://github.com/NvChad/NvChad) Custom
-   - [basic config](https://github.com/NvChad/basic-config)
-   - [example config](https://github.com/NvChad/example_config/tree/v1.0)
-
-## Update NvChad
+## Setup
 
 ```bash
-:NvChadUpdate
+git clone https://github.com/rurumimic/nvim ~/.config/nvim
 ```
 
-## My Custom Configurations
-
-```bash
-rm -rf ~/.config/nvim/lua/custom
-git clone https://github.com/rurumimic/nvim ~/.config/nvim/lua/custom --depth 1
-git fetch && git pull
-```
+### Alias vi
 
 ```bash
-~/.config/nvim/                  # NvChad/NvChad
-├── LICENSE
-├── init.lua
-├── lazy-lock.json
-└── lua/
-    ├── core/
-    │   ├── bootstrap.lua
-    │   ├── default_config.lua
-    │   ├── init.lua
-    │   ├── mappings.lua
-    │   └── utils.lua
-    ├── custom/                  # rurumimic/nvim
-    │   ├── README.md
-    │   └── chadrc.lua
-    └── plugins/
-        ├── configs/
-        │   ├── cmp.lua
-        │   ├── lazy_nvim.lua
-        │   ├── lspconfig.lua
-        │   ├── mason.lua
-        │   ├── nvimtree.lua
-        │   ├── others.lua
-        │   ├── telescope.lua
-        │   └── treesitter.lua
-        └── init.lua
+alias vi='nvim'
 ```
+
+### Run Neovim
+
+```bash
+vi +MasonInstallAll
+```
+
+### Prerequisites
+
+#### Install Packages
+
+- neovim
+- node.js
+- nerd font
+- ripgrep
+- gcc
+- make
+
+#### Clean old neovim folders
+
+```bash
+rm -rf ~/.config/nvim
+rm -rf ~/.local/state/nvim
+rm -rf ~/.local/share/nvim
+```
+
+---
+
+## NvChad
+
+- [NvChad](https://github.com/NvChad/NvChad) v2.5
+  - [starter](https://github.com/NvChad/starter)
+  - [tinyvim](https://github.com/NvChad/tinyvim)
 
