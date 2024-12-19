@@ -15,7 +15,13 @@ alias vi='nvim'
 ### Run Neovim
 
 ```bash
-vi +MasonInstallAll
+vi
+```
+
+#### Install plugins
+
+```vim
+:MasonInstallAll
 ```
 
 ### Prerequisites
@@ -44,4 +50,25 @@ rm -rf ~/.local/share/nvim
 - [NvChad](https://github.com/NvChad/NvChad) v2.5
   - [starter](https://github.com/NvChad/starter)
   - [tinyvim](https://github.com/NvChad/tinyvim)
+
+### LSP
+
+- nvchad: [lsp](https://nvchad.com/docs/config/lsp)
+
+```bash
+vi ~/.config/nvim/lua/configs/lspconfig.lua
+```
+
+```lua
+local servers = {
+    "html",
+    "cssls"
+}
+```
+
+Run:
+
+```vim
+:MasonInstallAll
+```
 
