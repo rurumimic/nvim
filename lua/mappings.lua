@@ -9,3 +9,6 @@ map("i", "jk", "<ESC>")
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 
+map("n", "<C-u>", "<C-u>zz", { nowait = true, desc = "Page Up" })
+map("n", "<C-d>", "<C-d>zz", { nowait = true, desc = "Page Down" })
+
