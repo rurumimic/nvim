@@ -3,7 +3,6 @@ require("nvchad.configs.lspconfig").defaults()
 
 local lspconfig = require "lspconfig"
 
--- EXAMPLE
 local servers = { "html", "cssls" }
 local nvlsp = require "nvchad.configs.lspconfig"
 
@@ -23,3 +22,4 @@ end
 --   capabilities = nvlsp.capabilities,
 -- }
 
+lspconfig.rust_analyzer.setup(require "configs.lsp.rust")

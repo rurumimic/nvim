@@ -55,18 +55,56 @@ rm -rf ~/.local/share/nvim
 
 - nvchad: [lsp](https://nvchad.com/docs/config/lsp)
 
-```bash
-vi ~/.config/nvim/lua/configs/lspconfig.lua
-```
+#### with default config
+
+`~/.config/nvim/lua/configs/lspconfig.lua`:
 
 ```lua
 local servers = {
     "html",
-    "cssls"
+    "cssls",
 }
 ```
 
-Run:
+#### with custom config
+
+`~/.config/nvim/lua/configs/lsp/rust.lua`:
+
+```lua
+local nvlsp = require "nvchad.configs.lspconfig"
+
+local M = {
+  on_attach = nvlsp.on_attach,
+  capabilities = nvlsp.capabilities,
+  settings = {
+    -- ...
+  },
+}
+
+return M
+```
+
+`~/.config/nvim/lua/configs/lspconfig.lua`:
+
+```lua
+lspconfig.rust_analyzer.setup(require "configs.lsp.rust")
+```
+
+### Formatters
+
+`~/.config/nvim/lua/configs/conform.lua`:
+
+```lua
+local options = {
+  formatters_by_ft = {
+    rust = { "rustfmt" },
+  },
+}
+
+return options
+```
+
+### Install all plugins
 
 ```vim
 :MasonInstallAll
