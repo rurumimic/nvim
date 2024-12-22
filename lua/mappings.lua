@@ -12,3 +12,4 @@ map("i", "jk", "<ESC>")
 map("n", "<C-u>", "<C-u>zz", { nowait = true, desc = "Page Up" })
 map("n", "<C-d>", "<C-d>zz", { nowait = true, desc = "Page Down" })
 
+map("n", "gl", vim.diagnostic.open_float, { noremap = true, silent = true, desc = "Show diagnostics under cursor" })
