@@ -89,6 +89,15 @@ rm -rf ~/.local/share/nvim
 - Git status: `<leader>gt`
 - Git commits: `<leader>cm`
 
+### Copilot
+
+- Next suggestion: `<M-]>`
+- Previous suggestion: `<M-[>`
+- Accept suggestion: `<Tab>`
+- Accept word: `<M-Right>`
+- Accept line: `<M-C-Right>`
+- Dismiss suggestion: `<C-]>`
+
 ---
 
 ## NvChad
