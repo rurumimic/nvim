@@ -45,6 +45,52 @@ rm -rf ~/.local/share/nvim
 
 ---
 
+## Key Mappings
+
+- Cheatsheets: `<leader>ch`
+
+### Terminals
+
+- New horizontal: `<leader>h`
+- New vertical: `<leader>v`
+- Toggle horizontal: `<M-h>`
+- Toggle vertical: `<M-v>`
+- Toggle floating: `<M-i>`
+
+### Tree
+
+- Toggle: `<C-n>`
+- Focus: `<leader>e`
+
+### Formatters
+
+- Format file: `<leader>fm`
+
+### LSP
+
+- Diagnostic under the cursor: `<C-W><C-D>`, `<C-W>d`, `gl`
+- Diagnostic loclist: `<leader> + ds`
+- To the previous diagnostic: `[d`
+- To the next diagnostic: `]d`
+
+### Git
+
+- Fugitive: `<leader>gf`
+
+### Telescope
+
+- Live grep: `<leader>fw`
+- Find files: `<leader>ff`
+- Find in current buffer: `<leader>fz`
+- Find buffers: `<leader>fb`
+- Find oldfiles: `<leader>fo`
+- Find help: `<leader>fh`
+- Pick a terminal: `<leader>pt`
+- Git status: `<leader>gt`
+- Git commits: `<leader>cm`
+
+---
+
 ## NvChad
 
 - [NvChad](https://github.com/NvChad/NvChad) v2.5
