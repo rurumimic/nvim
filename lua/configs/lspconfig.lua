@@ -15,11 +15,12 @@ for _, lsp in ipairs(servers) do
   }
 end
 
+lspconfig.clangd.setup(require "configs.lsp.c")
+lspconfig.rust_analyzer.setup(require "configs.lsp.rust")
+
 -- configuring single server, example: typescript
 -- lspconfig.ts_ls.setup {
 --   on_attach = nvlsp.on_attach,
 --   on_init = nvlsp.on_init,
 --   capabilities = nvlsp.capabilities,
 -- }
-
-lspconfig.rust_analyzer.setup(require "configs.lsp.rust")

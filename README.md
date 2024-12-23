@@ -100,6 +100,15 @@ rm -rf ~/.local/share/nvim
 
 ---
 
+## Languages
+
+src: [lua/configs/lspconfig.lua](lua/configs/lspconfig.lua), [lua/configs/conform.lua](lua/configs/conform.lua)
+
+- c, cpp, cuda: clangd, clang-format
+- rust: rust-analyzer, rustfmt
+
+---
+
 ## NvChad
 
 - [NvChad](https://github.com/NvChad/NvChad) v2.5
