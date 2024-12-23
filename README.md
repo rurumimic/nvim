@@ -49,6 +49,10 @@ rm -rf ~/.local/share/nvim
 
 - Cheatsheets: `<leader>ch`
 
+### General
+
+- Save file without formatting: `<C-s>`
+
 ### Terminals
 
 - New horizontal: `<leader>h`
