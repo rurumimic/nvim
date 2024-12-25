@@ -18,3 +18,6 @@ map("n", "gl", vim.diagnostic.open_float, { noremap = true, silent = true, desc 
 -- Copilot
 -- stylua: ignore
 map("i", "<M-C-CR>", 'copilot#Accept("\\<CR>")', { expr = true, replace_keycodes = false, desc = "Copilot accept suggestion" })
+
+-- Tagbar
+map("n", "<leader>a", "<cmd>AerialToggle!<CR>", { desc = "Toggle Aerial" })
