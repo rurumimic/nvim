@@ -72,7 +72,7 @@ rm -rf ~/.local/share/nvim
 
 ### LSP
 
-- Diagnostic under the cursor: `<C-W><C-D>`, `<C-W>d`, `gl`
+- Diagnostic under the cursor: `<C-W><C-D>`, `<C-W>d`, `<leader>gl`, `gl`
 - Diagnostic loclist: `<leader> + ds`
 - To the previous diagnostic: `[d`
 - To the next diagnostic: `]d`
@@ -92,6 +92,19 @@ rm -rf ~/.local/share/nvim
 - Pick a terminal: `<leader>pt`
 - Git status: `<leader>gt`
 - Git commits: `<leader>cm`
+
+#### in Telescope window
+
+- Open with Trouble: `<C-t>`
+
+### Trouble
+
+- Toggle diagnostics: `<leader>tl`
+- Toggle diagnostics (current buffer): `<leader>tL`
+- Toggle symbols: `<leader>ts`
+- Toggle LSP references: `<leader>tr`
+- Toggle quickfix: `<leader>tq` (like `:vim /pattern/ %`)
+- Toggle loclist: `<leader>tc` (like `:lv /pattern/ %`)
 
 ### Copilot
 
