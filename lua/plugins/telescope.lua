@@ -7,8 +7,8 @@ return {
     opts = {
       defaults = {
         mappings = {
-          i = { ["<C-t>"] = open_with_trouble },
-          n = { ["<C-t>"] = open_with_trouble },
+          i = { ["<C-q>"] = open_with_trouble },
+          n = { ["<C-q>"] = open_with_trouble },
         },
       },
     },

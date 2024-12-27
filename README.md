@@ -95,7 +95,7 @@ rm -rf ~/.local/share/nvim
 
 #### in Telescope window
 
-- Open with Trouble: `<C-t>`
+- Send items to quicfixlist with Trouble: `<C-q>`
 
 ### Trouble
 
