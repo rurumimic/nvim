@@ -53,6 +53,7 @@ rm -rf ~/.local/share/nvim
 
 - Save file without formatting: `<C-s>`
 - Opens the current filepath or URL: `gx`
+- goto file: `gf`
 
 ### Terminals
 
