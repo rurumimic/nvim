@@ -15,6 +15,12 @@ local options = {
     timeout_ms = 500,
     lsp_fallback = true,
   },
+
+  formatters = {
+    codespell = {
+      prepend_args = { "-L", "crate" },
+    },
+  },
 }
 
 return options
