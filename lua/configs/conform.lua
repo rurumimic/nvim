@@ -4,6 +4,7 @@ local options = {
     c = { "clang-format" },
     cpp = { "clang-format" },
     rust = { "rustfmt" },
+    go = { "gofmt" },
     -- css = { "prettier" },
     -- html = { "prettier" },
     ["*"] = { "codespell" },

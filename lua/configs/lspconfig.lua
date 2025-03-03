@@ -17,6 +17,7 @@ end
 
 lspconfig.clangd.setup(require "configs.lsp.c")
 lspconfig.rust_analyzer.setup(require "configs.lsp.rust")
+lspconfig.gopls.setup {}
 
 -- configuring single server, example: typescript
 -- lspconfig.ts_ls.setup {
