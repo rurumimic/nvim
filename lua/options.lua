@@ -19,3 +19,5 @@ o.pumheight = 10 -- completion menu height
 o.relativenumber = true
 o.wildmode = "longest:full,full" -- command-line completion mode
 o.wrap = false
+
+require("configs.providers.python").setup()

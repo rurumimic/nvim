@@ -128,6 +128,35 @@ src: [lua/configs/lspconfig.lua](lua/configs/lspconfig.lua), [lua/configs/confor
 
 ---
 
+## Providers
+
+- [lua/configs/providers/python.lua](lua/configs/providers/python.lua)
+
+### Python Virtual Environment
+
+```bash
+uv python install 3.12
+uv venv --python 3.12
+```
+
+<details><summary>:checkhealth</summary>
+
+```bash
+provider.python: require("provider.python.health").check()
+
+Python 3 provider (optional) ~
+- Using: g:python3_host_prog = "/home/keanu/.config/nvim/.venv/bin/python"
+- Executable: /home/keanu/.config/nvim/.venv/bin/python
+- Python version: 3.12.9
+- pynvim version: 0.5.2
+- OK Latest pynvim is installed.
+```
+
+</details>
+
+
+---
+
 ## NvChad
 
 - [NvChad](https://github.com/NvChad/NvChad) v2.5
