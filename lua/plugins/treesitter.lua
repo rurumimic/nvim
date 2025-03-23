@@ -10,6 +10,7 @@ return {
         "html",
         "lua",
         "make",
+        "proto",
         "rust",
         "vim",
         "vimdoc",
