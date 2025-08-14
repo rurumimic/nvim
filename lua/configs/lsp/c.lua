@@ -12,7 +12,7 @@ local M = {
     "--limit-references=0",
     "--header-insertion=iwyu",
     "--completion-style=detailed",
-    "--function-arg-placeholders",
+    "--function-arg-placeholders=true",
     "--fallback-style=google",
   },
 }

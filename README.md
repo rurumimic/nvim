@@ -34,6 +34,8 @@ vi
 - ripgrep
 - gcc
 - make
+- luarocks
+- python3-venv
 
 #### Clean old neovim folders
 
@@ -135,6 +137,10 @@ src: [lua/configs/lspconfig.lua](lua/configs/lspconfig.lua), [lua/configs/confor
 ### Python Virtual Environment
 
 ```bash
+apt install python3-venv
+```
+
+```bash
 uv python install 3.12
 uv venv --python 3.12
 ```
@@ -145,8 +151,8 @@ uv venv --python 3.12
 provider.python: require("provider.python.health").check()
 
 Python 3 provider (optional) ~
-- Using: g:python3_host_prog = "/home/keanu/.config/nvim/.venv/bin/python"
-- Executable: /home/keanu/.config/nvim/.venv/bin/python
+- Using: g:python3_host_prog = "/home/user/.config/nvim/.venv/bin/python"
+- Executable: /home/user/.config/nvim/.venv/bin/python
 - Python version: 3.12.9
 - pynvim version: 0.5.2
 - OK Latest pynvim is installed.

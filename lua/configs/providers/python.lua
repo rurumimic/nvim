@@ -5,7 +5,7 @@ M.setup = function()
 
   if vim.fn.filereadable(venv) == 1 then
     vim.g.python3_host_prog = venv
-    vim.g.loaded_python3_provider = 1
+    vim.g.loaded_python3_provider = nil
   end
 end
 
