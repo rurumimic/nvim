@@ -145,6 +145,11 @@ uv python install 3.12
 uv venv --python 3.12
 ```
 
+```bash
+source ~/.config/nvim/.venv/bin/activate
+uv pip install pynvim
+```
+
 <details><summary>:checkhealth</summary>
 
 ```bash
@@ -154,7 +159,7 @@ Python 3 provider (optional) ~
 - Using: g:python3_host_prog = "/home/user/.config/nvim/.venv/bin/python"
 - Executable: /home/user/.config/nvim/.venv/bin/python
 - Python version: 3.12.9
-- pynvim version: 0.5.2
+- pynvim version: 0.6.0
 - OK Latest pynvim is installed.
 ```
 
