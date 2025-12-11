@@ -1,3 +1,5 @@
+-- replaced with mrcjkb/rustaceanvim
+
 local nvlsp = require "nvchad.configs.lspconfig"
 
 local M = {

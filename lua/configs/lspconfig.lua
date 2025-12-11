@@ -12,11 +12,15 @@ for _, lsp in ipairs(servers) do
     capabilities = nvlsp.capabilities,
   })
 end
+vim.lsp.enable(servers)
 
 vim.lsp.config("clangd", { require "configs.lsp.c" })
-vim.lsp.config("rust_analyzer", { require "configs.lsp.rust" })
+-- vim.lsp.config("rust_analyzer", { require "configs.lsp.rust" })
 vim.lsp.config("gopls", {})
 vim.lsp.config("pbls", {})
+
+-- vim.lsp.enable { "clangd", "rust_analyzer", "gopls", "pbls" }
+vim.lsp.enable { "clangd", "gopls", "pbls" }
 
 -- configuring single server, example: typescript
 -- vim.lsp.config("ts_ls", {
