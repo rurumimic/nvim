@@ -3,7 +3,7 @@ require "nvchad.options"
 local g = vim.g
 local o = vim.o
 
-g.copilot_no_tab_map = true -- disable tab mapping for copilot
+-- g.copilot_no_tab_map = true -- disable tab mapping for copilot
 
 o.autowrite = true -- automatically write before running commands
 o.conceallevel = 0 -- so that `` is visible in markdown files

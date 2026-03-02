@@ -110,7 +110,7 @@ rm -rf ~/.local/share/nvim
 - Toggle quickfix: `<leader>tq` (like `:vim /pattern/ %`)
 - Toggle loclist: `<leader>tc` (like `:lv /pattern/ %`)
 
-### Copilot
+### ~~Copilot~~
 
 - Next suggestion: `<M-]>`
 - Previous suggestion: `<M-[>`
