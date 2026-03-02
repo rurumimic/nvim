@@ -84,6 +84,7 @@ rm -rf ~/.local/share/nvim
 ### Git
 
 - Fugitive: `<leader>gf`
+- Lazygit: `<leader>lg`
 
 ### Telescope
 
@@ -231,5 +232,17 @@ return options
 
 ```vim
 :MasonInstallAll
+```
+
+---
+
+## Tools
+
+### LazyGit
+
+- github: [lazygit](https://github.com/jesseduffield/lazygit)
+
+```bash
+go install github.com/jesseduffield/lazygit@latest
 ```
 

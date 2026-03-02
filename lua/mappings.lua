@@ -17,6 +17,9 @@ map("n", "<C-d>", "<C-d>zz", { nowait = true, desc = "Page Down" })
 -- Git
 map("n", "<leader>gf", "<cmd>G<cr>", { desc = "Fugitive" })
 
+-- LazyGit
+map("n", "<leader>lg", "<cmd>LazyGit<cr>", { desc = "LazyGit" })
+
 -- LSP
 map("n", "gk", vim.diagnostic.open_float, { noremap = true, silent = true, desc = "Show diagnostics under the cursor" })
 map("n", "gl", vim.diagnostic.open_float, { noremap = true, silent = true, desc = "Show diagnostics under the cursor" })
