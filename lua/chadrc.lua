@@ -18,7 +18,7 @@ local hl_add = {
 local M = {}
 
 M.base46 = {
-  theme = "gruvchad",
+  theme = "onenord",
 
   hl_override = hl_override,
   hl_add = hl_add,
