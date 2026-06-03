@@ -14,8 +14,8 @@ for _, lsp in ipairs(servers) do
 end
 vim.lsp.enable(servers)
 
-vim.lsp.config("clangd", { require "configs.lsp.c" })
--- vim.lsp.config("rust_analyzer", { require "configs.lsp.rust" })
+vim.lsp.config("clangd", require "configs.lsp.c")
+-- vim.lsp.config("rust_analyzer", require "configs.lsp.rust")
 vim.lsp.config("gopls", {})
 vim.lsp.config("pbls", {})
 
